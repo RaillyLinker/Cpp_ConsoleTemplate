@@ -27,8 +27,12 @@
 
 int main()
 {
+	// static 변수 출력
 	std::cout << ns_template::Template::sampleInt << std::endl;
-	ns_template::Template::sampleFunc("테스트1", "test2");
+
+	// 클래스 함수 실행
+	ns_template::Template templateObj = ns_template::Template();
+	templateObj.sampleFunc("테스트1", "test2");
 
 	return 0;
 }
